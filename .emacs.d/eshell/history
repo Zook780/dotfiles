@@ -1,0 +1,7 @@
+cd .emacs.d/
+rm -rf recentf recentf\~ elpa/
+ls
+rm -rf ac-comphist.dat init.el\~ 
+ls
+rm -rf auto-save-list/ transient/
+ls
