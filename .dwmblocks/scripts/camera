@@ -1,0 +1,5 @@
+if [[ "$(fuser /dev/video0)" != "" ]]; then
+       icon=" "
+     fi
+  
+   printf "%s%s\\n" "$icon"
