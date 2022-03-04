@@ -17,3 +17,13 @@
 * GUI: xorg
 
 * Text Editor: Emacs
+
+# Screenshots
+
+Emacs
+
+<img src="./img/emacs.png" />
+
+Dwm + dwmblocks + St
+
+<img src="./img/dwm.png" />

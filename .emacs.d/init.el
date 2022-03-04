@@ -45,7 +45,7 @@
 ;; Font
 
 (add-to-list 'default-frame-alist
-	     '(font . "mononoki-11"))
+	     '(font . "mononoki-10.7"))
 
 ;; Magit
 
