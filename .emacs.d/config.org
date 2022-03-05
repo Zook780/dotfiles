@@ -1,0 +1,93 @@
+#+TITLE: Zook's Emacs Config
+#+AUTHOR: Zook780
+#+DESCRIPTION: My minimal ? GNU Emacs config
+
+* Melpa
+  ** This enables to install many more packages
+  #+begin_src emacs-lisp
+    (require 'package)
+    (setq package-enable-at-startup nil)
+    (add-to-list 'package-archives
+		 '("melpa" . "https://melpa.org/packages/"))
+    (package-initialize)
+  #+end_src
+
+* use-package install
+  ** Its easy to use :)
+  #+begin_src emacs-lisp
+    (unless (package-installed-p 'use-package)
+      (package-refresh-contents)
+      (package-install 'use-package))
+  #+end_src
+
+* Theme"s"
+  #+begin_src emacs-lisp
+    (use-package ewal-spacemacs-themes
+      :if window-system
+      :ensure t
+      :init
+      (load-theme 'ewal-spacemacs-modern t)
+      ;; Disabling toolbar/menubar/scrollbar
+      (menu-bar-mode -1)
+      (tool-bar-mode -1)
+      (scroll-bar-mode -1)
+      (electric-pair-mode 1)
+      (window-divider-mode 1))
+  #+end_src
+
+* Ewal
+  #+begin_src emacs-lisp
+    (use-package ewal
+      :init (setq ewal-use-built-in-always-p nil
+		  ewal-use-built-in-on-failure-p t
+		  ewal-built-in-palette "sexy-material"))
+  #+end_src
+
+* Dashboard
+  #+begin_src emacs-lisp
+    (use-package dashboard
+      :ensure t
+      :config
+      (dashboard-setup-startup-hook)
+      (setq dashboard-startup-banner "~/.emacs.d/avatar.png")
+      (setq dashboard-banner-logo-title "I like to code"))
+  #+end_src
+  
+* Custom Font
+  #+begin_src emacs-lisp
+    (add-to-list 'default-frame-alist
+		 '(font . "mononoki-12"))
+  #+end_src
+
+* Magit
+  
+  ** Git controls (staging, commiting. etc)
+  #+begin_src emacs-lisp
+    (use-package magit
+      :ensure t
+      :config
+      (setq magit-push-always-verify nil)
+      (setq git-commit-summary-max-length 50)
+      :bind
+      ("C-x C-g" . magit-status))
+  #+end_src
+
+* Beacon
+  ** Beacon (make the cursor shine when scrolling)
+  #+begin_src emacs-lisp
+    (use-package beacon
+      :ensure t
+      :config
+      (beacon-mode 1))
+  #+end_src
+
+* Disabling dialog-box
+  #+begin_src emacs-lisp
+	(setq use-dialog-box nil)
+	(setq use-file-dialog nil)
+	(setq make-backup-files nil)
+	(setq auto-save-default nil)
+        (global-subword-mode 1)
+        (defalias 'yes-or-no-p 'y-or-n-p)
+  #+end_src
+

@@ -1,19 +1,12 @@
-;; Melpa 
-
 (require 'package)
 (setq package-enable-at-startup nil)
-
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
-
 (package-initialize)
-;; use-package install
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-
-;; Themes
 
 (use-package ewal-spacemacs-themes
   :if window-system
@@ -24,17 +17,13 @@
   (menu-bar-mode -1)
   (tool-bar-mode -1)
   (scroll-bar-mode -1)
-  (beacon-mode 1)
+  (electric-pair-mode 1)
   (window-divider-mode 1))
-
-;; Ewal
 
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil
-              ewal-use-built-in-on-failure-p t
-              ewal-built-in-palette "sexy-material"))
-
-;; Dashboard
+	      ewal-use-built-in-on-failure-p t
+	      ewal-built-in-palette "sexy-material"))
 
 (use-package dashboard
   :ensure t
@@ -43,12 +32,8 @@
   (setq dashboard-startup-banner "~/.emacs.d/avatar.png")
   (setq dashboard-banner-logo-title "I like to code"))
 
-;; Font
-
 (add-to-list 'default-frame-alist
-	     '(font . "mononoki-11"))
-
-;; Magit
+	     '(font . "mononoki-12"))
 
 (use-package magit
   :ensure t
@@ -56,20 +41,16 @@
   (setq magit-push-always-verify nil)
   (setq git-commit-summary-max-length 50)
   :bind
-  ("C-x g" . magit-status))
+  ("C-x C-g" . magit-status))
 
-;; Beacon (make the cursor shine when scrolling)
-
-(use-package beacon)
-
-;; Pacmacs (pacman in emacs)
-
-(use-package pacmacs)
-
-;; Autocompletion
-
-(use-package auto-complete
+(use-package beacon
   :ensure t
-  :init
-  (progn
-    (global-auto-complete-mode t)))
+  :config
+  (beacon-mode 1))
+
+(setq use-dialog-box nil)
+(setq use-file-dialog nil)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(global-subword-mode 1)
+(defalias 'yes-or-no-p 'y-or-n-p)

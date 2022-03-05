@@ -1,8 +1,0 @@
-((("package-refresh-contents" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("auto-complete" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("package-install" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("pacmacs" .
-   [0 0 0 1 0 0 0])))
