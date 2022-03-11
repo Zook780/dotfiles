@@ -7,7 +7,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const unsigned int gappx	    = 13;
 static const double activeopacity   = 1.0f;     /* Window opacity when it's focused (0 <= opacity <= 1) */
-static const double inactiveopacity = 0.875f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
+static const double inactiveopacity = 0.775f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static       Bool bUseOpacity       = True;     /* Starts with opacity on any unfocused windows */
 
 static const char *fonts[]          = { "mononoki:size=13:antialias=true:autohint=true" };
@@ -56,7 +56,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/zsh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -65,7 +65,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show drun -show-icons -icon-theme Tela") },
+	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("maim /home/zook/pix/ss/$(date +%s).png ; notify-send 'Screenshot Captured'") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("xlock") },
 
