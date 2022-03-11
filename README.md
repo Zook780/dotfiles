@@ -10,7 +10,7 @@
 
 * Terminal Emulator: St
 
-* App Launcher: rofi
+* App Launcher: dmenu
 
 * GUI: Xorg
 
