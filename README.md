@@ -12,7 +12,7 @@
 
 * App Launcher: dmenu
 
-* GUI: Xorg
+* Display server: Xorg
 
 * Text Editor: Emacs
 
