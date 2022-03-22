@@ -65,7 +65,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show drun -show-icons -icon-theme Tela") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("maim /home/zook/pix/ss/$(date +%s).png ; notify-send 'Screenshot Captured'") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("xlock") },
 
