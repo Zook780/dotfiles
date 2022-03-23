@@ -10,7 +10,7 @@ static const double activeopacity   = 1.0f;     /* Window opacity when it's focu
 static const double inactiveopacity = 0.775f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static       Bool bUseOpacity       = True;     /* Starts with opacity on any unfocused windows */
 
-static const char *fonts[]          = { "mononoki:size=13:antialias=true:autohint=true" };
+static const char *fonts[]          = { "mononoki:size=13:style=bold:antialias=true:autohint=true" };
 
 #include "/home/zook/.cache/wal/colors-wal-dwm.h"
 

@@ -1,0 +1,5 @@
+cd
+cd encrypted/
+cat github_token.txt 
+cd ~/code/other/arch-install-script/
+git push origin master
