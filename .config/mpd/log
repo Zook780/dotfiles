@@ -1,0 +1,36 @@
+Mar 23 14:22 : update: added /Scary Garry.mp3
+Mar 23 14:22 : update: added /Scary Garry.mp3
+Mar 23 14:22 : exception: Failed to save database: Failed to commit /home/zook/.config/mpd/database: File exists
+Mar 23 14:23 : update: added /Scary Garry.mp3
+Mar 23 14:28 : update: added /Scary Garry.mp3
+Mar 23 19:53 : inotify: initializing inotify
+Mar 23 19:53 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 23 19:53 : inotify: watching music directory
+Mar 23 19:54 : fifo_output: Removing FIFO "/tmp/mpd.fifo"
+Mar 23 19:54 : exception: Failed to enable output "pulse audio" (pulse); pa_context_connect() has failed: Connection refused
+Mar 23 19:54 : exception: Failed to enable output "pulse audio" (pulse); pa_context_connect() has failed: Connection refused
+Mar 23 19:55 : output: Failed to pause "pulse audio" (pulse): failed to connect the stream: Connection terminated
+Mar 23 19:59 : player: played "Scary Garry.mp3"
+Mar 23 20:00 : player: played "Scary Garry.mp3"
+Mar 23 20:03 : player: played "Scary Garry.mp3"
+Mar 23 20:06 : player: played "Scary Garry.mp3"
+Mar 23 20:08 : player: played "Scary Garry.mp3"
+Mar 23 20:14 : player: played "Scary Garry.mp3"
+Mar 23 20:44 : update: added /3:59AM Divine.mp3
+Mar 23 20:48 : update: updating /Scary Garry.mp3
+Mar 23 20:48 : update: updating /3:59AM Divine.mp3
+Mar 23 20:52 : update: added /Somebody I used to know.mp3
+Mar 23 20:57 : update: updating /Somebody I used to know.mp3
+Mar 23 20:57 : player: played "3:59AM Divine.mp3"
+Mar 23 21:02 : update: updating /Scary Garry.mp3
+Mar 23 21:03 : update: updating /Scary Garry.mp3
+Mar 23 21:04 : update: updating /Scary Garry.mp3
+Mar 23 21:06 : player: played "Scary Garry.mp3"
+Mar 23 21:06 : update: updating /3:59AM Divine.mp3
+Mar 23 21:13 : update: added /Somebody That I Used To Know.mp3
+Mar 23 21:13 : update: removing Somebody I used to know.mp3
+Mar 23 21:14 : update: updating /Somebody That I Used To Know.mp3
+Mar 23 21:17 : player: played "Scary Garry.mp3"
+Mar 23 21:19 : player: played "Scary Garry.mp3"
+Mar 23 21:23 : player: played "3:59AM Divine.mp3"
+Mar 23 21:29 : player: played "Somebody That I Used To Know.mp3"
