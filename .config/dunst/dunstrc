@@ -1,0 +1,32 @@
+[global]
+	geometry = "300x5-30+20"	
+	font = JetBrains Mono Bold 12
+    	format = "<b>%s</b>\n%b"
+    	alignment = left
+	ignore_newline = no
+    	word_wrap = yes
+    	browser = /usr/bin/firefox -new-tab
+    	icon_position = left
+[frame]
+	width = 2
+	color = "#bf616a"
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the "#" and following would be interpreted as a comment.
+    background = "#222426"
+    foreground = "#ffffff"
+    timeout = 4
+
+[urgency_normal]
+    background = "#222426"
+    foreground = "#ffffff"
+    timeout = 4
+
+[urgency_critical]
+    background = "#ff0000"
+    foreground = "#ffffff"
+    timeout = 0
+
+
+
+
