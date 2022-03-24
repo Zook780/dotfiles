@@ -10,12 +10,12 @@ static const double activeopacity   = 1.0f;     /* Window opacity when it's focu
 static const double inactiveopacity = 0.775f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static       Bool bUseOpacity       = True;     /* Starts with opacity on any unfocused windows */
 
-static const char *fonts[]          = { "mononoki:size=13:style=bold:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono:size=13:style=bold:antialias=true:autohint=true" };
 
 #include "/home/zook/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "code", ">_", "www", "docs", "vbox","music", "~_~" };
+static const char *tags[] = { "code", "web", "sys", "docs", "vmac", "music", "~_~" };
 
 static const unsigned int ulinepad	= 5.3;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
@@ -42,7 +42,7 @@ static const char *downvol[] = {"/usr/bin/pamixer", "-u", "-d","2", NULL};
 static const char *mutevol[] = {"/usr/bin/pamixer", "-m", NULL};
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
+	{ "[|]",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };

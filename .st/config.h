@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mononoki:pixelsize=17:style=bold:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=17:antialias=true:autohint=true";
 int borderpx = 0;
 
 /*
