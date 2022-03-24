@@ -50,5 +50,6 @@ fi
 picom --experimental-backends &
 nitrogen --restore &
 dwmblocks &
-pulseaudio --start &
+mpd &
 exec dwm
+pulseaudio --start &
