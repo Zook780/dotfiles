@@ -33,7 +33,7 @@
   (setq dashboard-banner-logo-title "I like to code"))
 
 (add-to-list 'default-frame-alist
-	     '(font . "mononoki-12"))
+	     '(font . "JetBrains Mono-12"))
 
 (use-package magit
   :ensure t

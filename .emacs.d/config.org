@@ -56,7 +56,7 @@
 * Custom Font
   #+begin_src emacs-lisp
     (add-to-list 'default-frame-alist
-		 '(font . "mononoki-12"))
+		 '(font . "JetBrains Mono-12"))
   #+end_src
 
 * Magit
