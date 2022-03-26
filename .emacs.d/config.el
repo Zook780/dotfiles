@@ -25,7 +25,7 @@
 	which-key-idle-delay 0.8
 	which-key-max-description-length 25
 	which-key-allow-imprecise-window-fit t
-	which-key-separator "→" ))
+	which-key-separator " → " ))
 (which-key-mode)
 
 (use-package ewal-spacemacs-themes
@@ -46,7 +46,8 @@
 			 ewal-built-in-palette "sexy-material"))
 
 (use-package all-the-icons
-  :ensure t)
+    :ensure t)
+;; run all-the-icons-install-fonts after installation
 
 (use-package dashboard
 	     :ensure t
@@ -68,9 +69,25 @@
     :ensure t)
 (global-prettify-symbols-mode)
 
+(use-package yasnippet
+  :ensure t
+  :config
+  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  (yas-global-mode 1))
+
 (use-package org-bullets
   :ensure t)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(use-package lsp-mode
+  :ensure t)
+
+(use-package company
+    :ensure t)
+(add-hook 'after-init-hook 'global-company-mode)
+
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
 
 (use-package magit
 	     :ensure t

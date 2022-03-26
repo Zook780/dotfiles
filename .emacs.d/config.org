@@ -42,7 +42,7 @@
 	  which-key-idle-delay 0.8
 	  which-key-max-description-length 25
 	  which-key-allow-imprecise-window-fit t
-	  which-key-separator "→" ))
+	  which-key-separator " → " ))
   (which-key-mode)
 #+end_src
 
@@ -73,6 +73,7 @@
 #+begin_src emacs-lisp
   (use-package all-the-icons
     :ensure t)
+;; run all-the-icons-install-fonts after installation
 #+end_src
 
 * Dashboard
@@ -107,11 +108,41 @@
   (global-prettify-symbols-mode)
 #+end_src
 
+* Yasnippet
+#+begin_src emacs-lisp
+  (use-package yasnippet
+    :ensure t
+    :config
+    (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+    (yas-global-mode 1))
+#+end_src
+
 * Org mode bullets
 #+begin_src emacs-lisp
   (use-package org-bullets
     :ensure t)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+#+end_src
+
+* Autocompletion
+** lsp-mode
+#+begin_src emacs-lisp
+  (use-package lsp-mode
+    :ensure t)
+#+end_src
+
+** company (for completions)
+#+begin_src emacs-lisp
+  (use-package company
+      :ensure t)
+  (add-hook 'after-init-hook 'global-company-mode)
+#+end_src
+
+** Language servers
+*** C++/C
+#+begin_src emacs-lisp
+  (add-hook 'c-mode-hook 'lsp)
+  (add-hook 'c++-mode-hook 'lsp)
 #+end_src
 
 * Magit
