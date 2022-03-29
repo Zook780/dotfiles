@@ -65,9 +65,11 @@ static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacs") },
+	{ MODKEY, 			XK_n,	   spawn,	   SHCMD("st -e /usr/bin/ncmpcpp") },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show drun -show-icons -icon-theme Tela") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("maim /home/zook/pix/ss/$(date +%s).png ; notify-send 'Screenshot Captured'") },
-	{ MODKEY,                       XK_b,      spawn,          SHCMD("xlock") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD("st -e /usr/bin/ranger") },
 
 	{ MODKEY,		        XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_w,      togglebar,      {0} },
