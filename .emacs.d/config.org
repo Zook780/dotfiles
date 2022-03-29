@@ -159,7 +159,7 @@
     (global-flycheck-mode t))   
 #+end_src
 
-** company (for completions)
+** company-mode (for completions)
 #+begin_src emacs-lisp
   (use-package company
     :ensure t)
