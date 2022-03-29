@@ -1,8 +1,8 @@
 auto-save-list/
 config.el
-elpa
-eshell 
-packages.el # nothing to do
 recentf
 transient/
+elpa/
+eshell/ 
+packages.el # nothing to do
 .lsp-session-v1
