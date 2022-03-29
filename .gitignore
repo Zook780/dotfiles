@@ -1,6 +1,7 @@
 .Xauthority
 .bash_history
 .bash_logout
+.lesshst
 .bash_profile
 .bashrc
 .cache/

@@ -1,4 +1,5 @@
 mpd_music_dir = "~/audio/music"
+lyrics_directory = ~/.config/ncmpcpp/lyrics
 mpd_crossfade_time = "2"
 ncmpcpp_directory = ~/.config/ncmpcpp
 visualizer_data_source = "/tmp/mpd.fifo"
