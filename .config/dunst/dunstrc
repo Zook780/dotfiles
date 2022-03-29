@@ -1,6 +1,5 @@
 [global]
-	geometry = "300x5-30+20"	
-	font = JetBrains Mono Bold 12
+	font = JetBrains Mono Bold 11.5
     	format = "<b>%s</b>\n%b"
     	alignment = left
 	ignore_newline = no
