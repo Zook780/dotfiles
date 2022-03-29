@@ -11,9 +11,9 @@
 	       '("melpa" . "https://melpa.org/packages/"))
   (package-initialize)
 #+end_src
-  
+ 
 * use-package install
-** Its easy to use :)
+** Its easy to use :D
 #+begin_src emacs-lisp
   (unless (package-installed-p 'use-package)
     (package-refresh-contents)
@@ -42,7 +42,7 @@
 	  which-key-idle-delay 0.8
 	  which-key-max-description-length 25
 	  which-key-allow-imprecise-window-fit t
-	  which-key-separator " → " ))
+	  which-key-separator "  " ))
   (which-key-mode)
 #+end_src
 
@@ -72,8 +72,8 @@
 * All the icons
 #+begin_src emacs-lisp
   (use-package all-the-icons
-    :ensure t)
-;; run all-the-icons-install-fonts after installation
+	       :ensure t)
+  ;; run all-the-icons-install-fonts after installation
 #+end_src
 
 * Dashboard
@@ -91,7 +91,7 @@
 * Doom modeline
 #+begin_src emacs-lisp
   (use-package doom-modeline
-    :ensure t)
+	       :ensure t)
   (doom-modeline-mode 1)
 #+end_src
 
@@ -104,23 +104,23 @@
 * Prettify symbols mode
 #+begin_src emacs-lisp
   (use-package pretty-symbols
-      :ensure t)
+	       :ensure t)
   (global-prettify-symbols-mode)
 #+end_src
 
 * Yasnippet
 #+begin_src emacs-lisp
   (use-package yasnippet
-    :ensure t
-    :config
-    (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-    (yas-global-mode 1))
+	       :ensure t
+	       :config
+	       (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+	       (yas-global-mode 1))
 #+end_src
 
 * Org mode bullets
 #+begin_src emacs-lisp
   (use-package org-bullets
-    :ensure t)
+	       :ensure t)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 #+end_src
 
@@ -128,21 +128,42 @@
 ** lsp-mode
 #+begin_src emacs-lisp
   (use-package lsp-mode
-    :ensure t)
+    :ensure t
+    :init
+    ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+    (setq lsp-keymap-prefix "C-c l")
+    :hook (
+	   (c++-mode . lsp)
+	   (c-mode . lsp)
+	   (python-mode . lsp)
+	   ;; use $sudo pip install python-lsp-server python-language-server
+	   (html-mode . lsp)
+	   ;; for html npm install -g vscode-html-languageserver-bin and install html-ls I guess from lsp-install-server
+	   (css-mode . lsp)
+	   ;;for css npm install -g vscode-css-languageserver-bin and install css-ls from lsp-install-server
+	   (dart-mode . lsp)
+	   ;; if you want which-key integration
+	   (lsp-mode . lsp-enable-which-key-integration))
+    :commands lsp)
+
+  ;; optionally
+  (use-package lsp-ui :ensure t :commands lsp-ui-mode)
+
+#+end_src
+
+** Flycheck
+#+begin_src emacs-lisp
+  (use-package flycheck
+    :ensure t
+    :init
+    (global-flycheck-mode t))   
 #+end_src
 
 ** company (for completions)
 #+begin_src emacs-lisp
   (use-package company
-      :ensure t)
+    :ensure t)
   (add-hook 'after-init-hook 'global-company-mode)
-#+end_src
-
-** Language servers
-*** C++/C
-#+begin_src emacs-lisp
-  (add-hook 'c-mode-hook 'lsp)
-  (add-hook 'c++-mode-hook 'lsp)
 #+end_src
 
 * Magit
@@ -169,16 +190,16 @@
 * Yasnippet
 #+begin_src emacs-lisp
   (use-package yasnippet
-    :ensure t
-    :config
-    (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-    (yas-global-mode 1))
+	       :ensure t
+	       :config
+	       (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+	       (yas-global-mode 1))
 #+end_src
 
 * Emojify
 #+begin_src emacs-lisp
   (use-package emojify
-    :ensure t)
+	       :ensure t)
   (global-emojify-mode)
 #+end_src
 
