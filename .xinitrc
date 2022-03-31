@@ -15,6 +15,7 @@ fi
 
 picom --experimental-backends &
 nitrogen --restore &
+dunst &
 emacs --daemon &
 dwmblocks &
 exec dwm
