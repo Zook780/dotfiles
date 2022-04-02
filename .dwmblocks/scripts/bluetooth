@@ -1,5 +1,0 @@
-if [[ "$(bluetoothctl info)" != "Missing device address argument" ]]; then
-       icon=" " 
-     fi
-  
-   printf "%s%s\\n" "$icon"

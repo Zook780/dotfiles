@@ -1,7 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"  ", "/home/zook/.dwmblocks/scripts/cpu", 15, 0},
+	{"  ", "top -bn1 | grep load | awk '{printf "%.2f%%\t\t\n", $(NF-2)}'", 15, 0},
 	{" ", "free -h | awk '/^Mem: /{ print $3 }'", 15, 0},
 	{" ", "pamixer --get-volume", 1, 0},
 	{" ", "date '+(%b %d) %I:%M%p '", 5, 0},
