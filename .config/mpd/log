@@ -1,84 +1,115 @@
-Mar 23 14:22 : update: added /Scary Garry.mp3
-Mar 23 14:22 : update: added /Scary Garry.mp3
-Mar 23 14:22 : exception: Failed to save database: Failed to commit /home/zook/.config/mpd/database: File exists
-Mar 23 14:23 : update: added /Scary Garry.mp3
-Mar 23 14:28 : update: added /Scary Garry.mp3
-Mar 23 19:53 : inotify: initializing inotify
-Mar 23 19:53 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
-Mar 23 19:53 : inotify: watching music directory
-Mar 23 19:54 : fifo_output: Removing FIFO "/tmp/mpd.fifo"
-Mar 23 19:54 : exception: Failed to enable output "pulse audio" (pulse); pa_context_connect() has failed: Connection refused
-Mar 23 19:54 : exception: Failed to enable output "pulse audio" (pulse); pa_context_connect() has failed: Connection refused
-Mar 23 19:55 : output: Failed to pause "pulse audio" (pulse): failed to connect the stream: Connection terminated
-Mar 23 19:59 : player: played "Scary Garry.mp3"
-Mar 23 20:00 : player: played "Scary Garry.mp3"
-Mar 23 20:03 : player: played "Scary Garry.mp3"
-Mar 23 20:06 : player: played "Scary Garry.mp3"
-Mar 23 20:08 : player: played "Scary Garry.mp3"
-Mar 23 20:14 : player: played "Scary Garry.mp3"
-Mar 23 20:44 : update: added /3:59AM Divine.mp3
-Mar 23 20:48 : update: updating /Scary Garry.mp3
-Mar 23 20:48 : update: updating /3:59AM Divine.mp3
-Mar 23 20:52 : update: added /Somebody I used to know.mp3
-Mar 23 20:57 : update: updating /Somebody I used to know.mp3
-Mar 23 20:57 : player: played "3:59AM Divine.mp3"
-Mar 23 21:02 : update: updating /Scary Garry.mp3
-Mar 23 21:03 : update: updating /Scary Garry.mp3
-Mar 23 21:04 : update: updating /Scary Garry.mp3
-Mar 23 21:06 : player: played "Scary Garry.mp3"
-Mar 23 21:06 : update: updating /3:59AM Divine.mp3
-Mar 23 21:13 : update: added /Somebody That I Used To Know.mp3
-Mar 23 21:13 : update: removing Somebody I used to know.mp3
-Mar 23 21:14 : update: updating /Somebody That I Used To Know.mp3
-Mar 23 21:17 : player: played "Scary Garry.mp3"
-Mar 23 21:19 : player: played "Scary Garry.mp3"
-Mar 23 21:23 : player: played "3:59AM Divine.mp3"
-Mar 23 21:29 : player: played "Somebody That I Used To Know.mp3"
-Mar 24 23:37 : player: played "Scary Garry.mp3"
-Mar 25 14:08 : player: played "Scary Garry.mp3"
-Mar 25 14:15 : update: updating /3:59AM Divine.mp3
-Mar 25 14:15 : update: added /Sahara.mp3
-Mar 25 14:16 : player: played "3:59AM Divine.mp3"
-Mar 25 14:20 : update: updating /3:59AM Divine.mp3
-Mar 25 14:21 : player: played "3:59AM Divine.mp3"
-Mar 25 14:23 : player: played "Scary Garry.mp3"
-Mar 25 14:27 : player: played "Somebody That I Used To Know.mp3"
-Mar 25 14:29 : player: played "Scary Garry.mp3"
-Mar 25 14:34 : player: played "3:59AM Divine.mp3"
-Mar 25 14:36 : player: played "Sahara.mp3"
-Mar 25 21:57 : player: played "3:59AM Divine.mp3"
-Mar 26 10:07 : player: played "Scary Garry.mp3"
-Mar 26 10:17 : player: played "3:59AM Divine.mp3"
-Mar 26 14:40 : player: played "Scary Garry.mp3"
-Mar 26 14:45 : player: played "3:59AM Divine.mp3"
-Mar 26 14:50 : player: played "Somebody That I Used To Know.mp3"
-Mar 26 14:52 : player: played "Scary Garry.mp3"
-Mar 26 14:54 : player: played "Scary Garry.mp3"
-Mar 26 14:57 : player: played "Sahara.mp3"
-Mar 26 15:01 : player: played "Somebody That I Used To Know.mp3"
-Mar 26 15:05 : player: played "3:59AM Divine.mp3"
-Mar 26 15:08 : player: played "Sahara.mp3"
-Mar 26 15:10 : player: played "Scary Garry.mp3"
-Mar 26 15:17 : player: played "3:59AM Divine.mp3"
-Mar 26 15:22 : player: played "Somebody That I Used To Know.mp3"
-Mar 26 15:24 : player: played "Sahara.mp3"
-Mar 26 15:26 : player: played "Scary Garry.mp3"
-Mar 26 15:28 : player: played "Scary Garry.mp3"
-Mar 26 15:29 : player: played "Scary Garry.mp3"
-Mar 26 16:18 : player: played "Somebody That I Used To Know.mp3"
-Mar 29 14:05 : update: added /Close Eyes.mp3
-Mar 29 14:08 : update: updating /Close Eyes.mp3
-Mar 29 14:12 : update: added /Dream Space.mp3
-Mar 29 14:13 : update: updating /Dream Space.mp3
-Mar 29 14:38 : player: played "Close Eyes.mp3"
-Mar 29 18:56 : update: added /Disaster.mp3
-Mar 29 18:57 : update: updating /Disaster.mp3
-Mar 29 20:08 : update: added /Chaabi Wala Bandar.mp3
-Mar 29 20:08 : update: updating /Chaabi Wala Bandar.mp3
-Mar 29 20:28 : player: played "Chaabi Wala Bandar.mp3"
-Mar 29 20:31 : player: played "3:59AM Divine.mp3"
-Mar 29 20:34 : player: played "Close Eyes.mp3"
-Mar 29 20:37 : player: played "Dream Space.mp3"
-Mar 29 20:38 : player: played "Disaster.mp3"
-Mar 29 20:40 : player: played "Scary Garry.mp3"
-Mar 29 20:43 : player: played "Disaster.mp3"
+Mar 30 13:03 : update: added /Dream Space.mp3
+Mar 30 13:03 : update: added /Chaabi Wala Bandar.mp3
+Mar 30 13:03 : update: added /Disaster.mp3
+Mar 30 13:03 : update: added /Close Eyes.mp3
+Mar 30 13:03 : update: added /Scary Garry.mp3
+Mar 30 13:03 : update: added /3:59AM Divine.mp3
+Mar 30 13:03 : update: added /Somebody That I Used To Know.mp3
+Mar 30 13:03 : update: added /Sahara.mp3
+Mar 30 13:04 : player: played "Disaster.mp3"
+Mar 30 13:05 : player: played "Disaster.mp3"
+Mar 30 13:08 : player: played "Disaster.mp3"
+Mar 30 13:50 : update: added /Mera Bhai.mp3
+Mar 30 13:50 : update: updating /Mera Bhai.mp3
+Mar 30 14:06 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 14:10 : player: played "3:59AM Divine.mp3"
+Mar 30 14:13 : player: played "Mera Bhai.mp3"
+Mar 30 14:19 : player: played "Close Eyes.mp3"
+Mar 30 14:22 : player: played "Dream Space.mp3"
+Mar 30 14:26 : player: played "Somebody That I Used To Know.mp3"
+Mar 30 14:28 : player: played "Scary Garry.mp3"
+Mar 30 14:31 : player: played "Disaster.mp3"
+Mar 30 14:36 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 14:40 : player: played "3:59AM Divine.mp3"
+Mar 30 14:43 : player: played "Mera Bhai.mp3"
+Mar 30 14:47 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 14:51 : player: played "Disaster.mp3"
+Mar 30 14:55 : player: played "Disaster.mp3"
+Mar 30 14:58 : player: played "Scary Garry.mp3"
+Mar 30 15:02 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 15:08 : player: played "Mera Bhai.mp3"
+Mar 30 15:12 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 15:16 : player: played "3:59AM Divine.mp3"
+Mar 30 15:19 : player: played "Mera Bhai.mp3"
+Mar 30 15:21 : player: played "Close Eyes.mp3"
+Mar 30 15:24 : player: played "Dream Space.mp3"
+Mar 30 15:28 : player: played "Somebody That I Used To Know.mp3"
+Mar 30 15:30 : player: played "Scary Garry.mp3"
+Mar 30 15:31 : player: played "Disaster.mp3"
+Mar 30 15:33 : player: played "Scary Garry.mp3"
+Mar 30 15:36 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 15:41 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 15:45 : player: played "Mera Bhai.mp3"
+Mar 30 15:48 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 15:53 : player: played "3:59AM Divine.mp3"
+Mar 30 15:56 : player: played "Mera Bhai.mp3"
+Mar 30 15:59 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 17:50 : player: played "Chaabi Wala Bandar.mp3"
+Mar 30 23:01 : player: played "Disaster.mp3"
+Mar 31 12:12 : player: played "Chaabi Wala Bandar.mp3"
+Mar 31 12:17 : player: played "3:59AM Divine.mp3"
+Mar 31 12:20 : player: played "Mera Bhai.mp3"
+Mar 31 17:44 : player: played "Mera Bhai.mp3"
+Mar 31 18:33 : player: played "Chaabi Wala Bandar.mp3"
+Mar 31 19:33 : player: played "Chaabi Wala Bandar.mp3"
+Mar 31 19:33 : player: played "3:59AM Divine.mp3"
+Mar 31 20:26 : update: added /Voice of the streets.mp3
+Mar 31 20:27 : update: updating /Voice of the streets.mp3
+Mar 31 20:59 : player: played "Voice of the streets.mp3"
+Mar 31 21:03 : player: played "Chaabi Wala Bandar.mp3"
+Mar 31 21:06 : player: played "Voice of the streets.mp3"
+Mar 31 21:13 : player: played "Voice of the streets.mp3"
+Mar 31 21:38 : player: played "Chaabi Wala Bandar.mp3"
+Apr 01 10:58 : player: played "Chaabi Wala Bandar.mp3"
+Apr 01 10:59 : player: played "Disaster.mp3"
+Apr 01 11:02 : player: played "Voice of the streets.mp3"
+Apr 01 11:09 : player: played "Voice of the streets.mp3"
+Apr 01 11:14 : player: played "Voice of the streets.mp3"
+Apr 01 15:55 : player: played "Voice of the streets.mp3"
+Apr 01 15:59 : player: played "Chaabi Wala Bandar.mp3"
+Apr 01 16:03 : player: played "Voice of the streets.mp3"
+Apr 01 16:07 : player: played "Disaster.mp3"
+Apr 01 16:10 : player: played "Scary Garry.mp3"
+Apr 01 16:15 : player: played "Somebody That I Used To Know.mp3"
+Apr 01 16:16 : update: updating /Somebody That I Used To Know.mp3
+Apr 01 16:17 : update: updating /Somebody That I Used To Know.mp3
+Apr 01 16:23 : player: played "Mera Bhai.mp3"
+Apr 01 16:49 : player: played "Voice of the streets.mp3"
+Apr 02 11:20 : player: played "Voice of the streets.mp3"
+Apr 02 11:23 : player: played "Chaabi Wala Bandar.mp3"
+Apr 02 12:38 : update: added /I Hate You I Love You.mp3
+Apr 02 12:39 : update: updating /I Hate You I Love You.mp3
+Apr 02 12:40 : update: updating /I Hate You I Love You.mp3
+Apr 02 12:52 : output: Failed to play on "pulse audio" (pulse): suspended
+Apr 02 12:53 : player: played "Voice of the streets.mp3"
+Apr 02 12:56 : player: played "I Hate You I Love You.mp3"
+Apr 02 13:10 : player: played "Chaabi Wala Bandar.mp3"
+Apr 02 14:02 : player: played "Voice of the streets.mp3"
+Apr 02 14:05 : player: played "I Hate You I Love You.mp3"
+Apr 02 14:06 : player: played "Disaster.mp3"
+Apr 02 14:55 : player: played "I Hate You I Love You.mp3"
+Apr 02 14:57 : player: played "Disaster.mp3"
+Apr 02 15:52 : player: played "Voice of the streets.mp3"
+Apr 02 15:54 : player: played "I Hate You I Love You.mp3"
+Apr 02 15:56 : player: played "Disaster.mp3"
+Apr 02 16:03 : player: played "Voice of the streets.mp3"
+Apr 02 16:05 : player: played "I Hate You I Love You.mp3"
+Apr 02 16:06 : player: played "Disaster.mp3"
+Apr 02 16:10 : player: played "Voice of the streets.mp3"
+Apr 02 16:12 : player: played "I Hate You I Love You.mp3"
+Apr 02 17:40 : player: played "Voice of the streets.mp3"
+Apr 02 17:42 : player: played "I Hate You I Love You.mp3"
+Apr 02 17:44 : player: played "Disaster.mp3"
+Apr 02 17:47 : player: played "Chaabi Wala Bandar.mp3"
+Apr 02 19:54 : player: played "Chaabi Wala Bandar.mp3"
+Apr 02 20:32 : player: played "Chaabi Wala Bandar.mp3"
+Apr 02 20:35 : player: played "Voice of the streets.mp3"
+Apr 02 20:39 : player: played "3:59AM Divine.mp3"
+Apr 02 20:42 : player: played "Mera Bhai.mp3"
+Apr 02 21:01 : output: Failed to play on "pulse audio" (pulse): suspended
+Apr 02 21:22 : player: played "I Hate You I Love You.mp3"
+Apr 03 01:20 : player: played "Disaster.mp3"
+Apr 03 14:44 : player: played "Chaabi Wala Bandar.mp3"
+Apr 03 14:47 : player: played "Voice of the streets.mp3"
+Apr 03 14:51 : player: played "3:59AM Divine.mp3"
+Apr 03 14:57 : player: played "Close Eyes.mp3"
