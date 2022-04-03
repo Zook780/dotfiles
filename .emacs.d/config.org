@@ -29,20 +29,20 @@
 * Which key
 #+begin_src emacs-lisp
   (use-package which-key
-    :ensure t
-    :init
-    (setq which-key-side-window-location 'bottom
-	  which-key-sort-order #'which-key-key-order-alpha
-	  which-key-sort-uppercase-first nil
-	  which-key-add-column-padding 1
-	  which-key-max-display-columns nil
-	  which-key-min-display-lines 6
-	  which-key-side-window-slot -10
-	  which-key-side-window-max-height 0.25
-	  which-key-idle-delay 0.8
-	  which-key-max-description-length 25
-	  which-key-allow-imprecise-window-fit t
-	  which-key-separator "  " ))
+	       :ensure t
+	       :init
+	       (setq which-key-side-window-location 'bottom
+		     which-key-sort-order #'which-key-key-order-alpha
+		     which-key-sort-uppercase-first nil
+		     which-key-add-column-padding 1
+		     which-key-max-display-columns nil
+		     which-key-min-display-lines 6
+		     which-key-side-window-slot -10
+		     which-key-side-window-max-height 0.25
+		     which-key-idle-delay 0.8
+		     which-key-max-description-length 25
+		     which-key-allow-imprecise-window-fit t
+		     which-key-separator "  " ))
   (which-key-mode)
 #+end_src
 
@@ -128,23 +128,23 @@
 ** lsp-mode
 #+begin_src emacs-lisp
   (use-package lsp-mode
-    :ensure t
-    :init
-    ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-    (setq lsp-keymap-prefix "C-c l")
-    :hook (
-	   (c++-mode . lsp)
-	   (c-mode . lsp)
-	   (python-mode . lsp)
-	   ;; use $sudo pip install python-lsp-server python-language-server
-	   (html-mode . lsp)
-	   ;; for html npm install -g vscode-html-languageserver-bin and install html-ls I guess from lsp-install-server
-	   (css-mode . lsp)
-	   ;;for css npm install -g vscode-css-languageserver-bin and install css-ls from lsp-install-server
-	   (dart-mode . lsp)
-	   ;; if you want which-key integration
-	   (lsp-mode . lsp-enable-which-key-integration))
-    :commands lsp)
+	       :ensure t
+	       :init
+	       ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+	       (setq lsp-keymap-prefix "C-c l")
+	       :hook (
+		      (c++-mode . lsp)
+		      (c-mode . lsp)
+		      (python-mode . lsp)
+		      ;; use $sudo pip install python-lsp-server python-language-server
+		      (html-mode . lsp)
+		      ;; for html npm install -g vscode-html-languageserver-bin and install html-ls I guess from lsp-install-server
+		      (css-mode . lsp)
+		      ;;for css npm install -g vscode-css-languageserver-bin and install css-ls from lsp-install-server
+		      (dart-mode . lsp)
+		      ;; if you want which-key integration
+		      (lsp-mode . lsp-enable-which-key-integration))
+	       :commands lsp)
 
   ;; optionally
   (use-package lsp-ui :ensure t :commands lsp-ui-mode)
@@ -154,15 +154,15 @@
 ** Flycheck
 #+begin_src emacs-lisp
   (use-package flycheck
-    :ensure t
-    :init
-    (global-flycheck-mode t))   
+	       :ensure t
+	       :init
+	       (global-flycheck-mode t))   
 #+end_src
 
 ** company-mode (for completions)
 #+begin_src emacs-lisp
   (use-package company
-    :ensure t)
+	       :ensure t)
   (add-hook 'after-init-hook 'global-company-mode)
 #+end_src
 
@@ -212,4 +212,3 @@
   (global-subword-mode 1)
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
-
