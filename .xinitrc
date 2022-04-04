@@ -18,5 +18,6 @@ nitrogen --restore &
 dunst &
 emacs --daemon &
 dwmblocks &
+redshift -O 4500K &
 exec dwm
 pulseaudio --start &
