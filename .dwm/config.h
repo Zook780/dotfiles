@@ -45,7 +45,7 @@ static const char *downvol[] = {"/usr/bin/pamixer", "-u", "-d","2", NULL};
 static const char *mutevol[] = {"/usr/bin/pamixer", "-m", NULL};
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[|]",      tile },    /* first entry is default */
+	{ "",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
