@@ -43,6 +43,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 static const char *upvol[] = {"/usr/bin/pamixer", "-u", "-i", "2", NULL};
 static const char *downvol[] = {"/usr/bin/pamixer", "-u", "-d","2", NULL};
 static const char *mutevol[] = {"/usr/bin/pamixer", "-m", NULL};
+static const char *playerplaypause[] = {"playerctl play-pause", NULL};
+static const char *playerprevious[] = {"playerctl previous", NULL};
+static const char *playernext[] = {"playerctl next", NULL};
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "",      tile },    /* first entry is default */
@@ -115,6 +118,10 @@ static Key keys[] = {
 	{ 0, 				XF86XK_AudioLowerVolume, spawn, {.v = downvol} },
 	{ 0, 				XF86XK_AudioRaiseVolume, spawn, {.v = upvol} },	
 	{ 0, 				XF86XK_AudioMute, spawn, {.v = mutevol} },
+	{0,  				XF86XK_AudioPlay, spawn, {.v = playerplaypause}},
+        {0,  				XF86XK_AudioPause, spawn, {.v = playerplaypause}},
+        {0,  				XF86XK_AudioNext, spawn, {.v = playernext}},
+        {0,  				XF86XK_AudioPrev, spawn, {.v = playerprevious}},
 };
 
 /* button definitions */
