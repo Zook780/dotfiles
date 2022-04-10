@@ -115,35 +115,3 @@ Apr 03 14:51 : player: played "3:59AM Divine.mp3"
 Apr 03 14:57 : player: played "Close Eyes.mp3"
 Apr 03 14:59 : player: played "Dream Space.mp3"
 Apr 03 15:02 : player: played "I Hate You I Love You.mp3"
-Apr 09 21:11 : exception: inotify_add_watch() has failed: No such file or directory
-Apr 10 12:19 : update: removing Disaster.mp3
-Apr 10 12:19 : update: updating /Dream Space.mp3
-Apr 10 12:19 : update: removing Mera Bhai.mp3
-Apr 10 12:19 : update: removing 3:59AM Divine.mp3
-Apr 10 12:19 : update: removing Voice of the streets.mp3
-Apr 10 12:19 : update: removing Scary Garry.mp3
-Apr 10 12:19 : update: removing Sahara.mp3
-Apr 10 12:19 : update: added /3:59 AM.mp3
-Apr 10 12:19 : update: updating /I Hate You I Love You.mp3
-Apr 10 12:19 : update: updating /Chaabi Wala Bandar.mp3
-Apr 10 12:19 : update: added /Voice of the Streets.mp3
-Apr 10 12:19 : update: added /Mera Bhai - DIVINE.mp3
-Apr 10 12:19 : update: updating /Somebody That I Used To Know.mp3
-Apr 10 12:19 : update: updating /Close Eyes.mp3
-Apr 10 12:19 : update: updating /Somebody That I Used To Know.mp3
-Apr 10 12:25 : update: added /Sahara.mp3
-Apr 10 12:26 : update: updating /Sahara.mp3
-Apr 10 12:28 : update: added /Disaster.mp3
-Apr 10 12:29 : update: updating /Disaster.mp3
-Apr 10 15:27 : update: updating /3:59 AM.mp3
-Apr 10 15:27 : update: updating /Chaabi Wala Bandar.mp3
-Apr 10 15:28 : update: updating /3:59 AM.mp3
-Apr 10 16:50 : player: played "Voice of the Streets.mp3"
-Apr 10 16:58 : player: played "3:59 AM.mp3"
-Apr 10 17:32 : player: played "Close Eyes.mp3"
-Apr 10 17:36 : player: played "I Hate You I Love You.mp3"
-Apr 10 18:58 : player: played "Voice of the Streets.mp3"
-Apr 10 19:01 : player: played "Voice of the Streets.mp3"
-Apr 10 19:04 : player: played "Voice of the Streets.mp3"
-Apr 10 19:08 : player: played "Chaabi Wala Bandar.mp3"
-Apr 10 19:11 : player: played "Mera Bhai - DIVINE.mp3"
