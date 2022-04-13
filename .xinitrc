@@ -16,8 +16,8 @@ fi
 picom --experimental-backends &
 nitrogen --restore &
 dunst &
-emacs --daemon &
 dwmblocks &
 redshift -O 4200K &
 exec dwm
 pulseaudio --start &
+emacs --daemon &
