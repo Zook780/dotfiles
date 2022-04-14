@@ -1,21 +1,24 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1.5;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const unsigned int gappx	    = 13;
+static const unsigned int gappx	    = 10;
 static const double activeopacity   = 1.0f;     /* Window opacity when it's focused (0 <= opacity <= 1) */
 static const double inactiveopacity = 0.775f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static       Bool bUseOpacity       = True;     /* Starts with opacity on any unfocused windows */
 
-static const char *fonts[]          = { "JetBrains Mono:size=13:style=bold:antialias=true:autohint=true" };
+static const int vertpad            = 5;       /* vertical padding of bar */
+static const int sidepad            = 7;       /* horizontal padding of bar */
+
+static const char *fonts[]          = { "JetBrains Mono:size=13.5:style=bold:antialias=true:autohint=true" };
 
 #include "/home/zook/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "code", "web", "sys", "docs", "vmac", "music", "~_~" };
+static const char *tags[] = { "code", "web", "sys", "docs", "vmac", "music" };
 
 static const unsigned int ulinepad	= 5.3;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
@@ -28,7 +31,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
@@ -40,9 +43,12 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 static const char *upvol[] = {"/usr/bin/pamixer", "-u", "-i", "2", NULL};
 static const char *downvol[] = {"/usr/bin/pamixer", "-u", "-d","2", NULL};
 static const char *mutevol[] = {"/usr/bin/pamixer", "-m", NULL};
+static const char *playerplaypause[] = {"playerctl play-pause", NULL};
+static const char *playerprevious[] = {"playerctl previous", NULL};
+static const char *playernext[] = {"playerctl next", NULL};
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[|]",      tile },    /* first entry is default */
+	{ "",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
@@ -66,8 +72,9 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacs") },
+	{ MODKEY,			XK_b,	   spawn,	   SHCMD("firefox") },
 	{ MODKEY, 			XK_n,	   spawn,	   SHCMD("st -e /usr/bin/ncmpcpp") },
-	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show drun -show-icons -icon-theme Tela") },
+	{ MODKEY,                       XK_p,      spawn,          SHCMD("dmenu_run") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("maim /home/zook/pix/ss/$(date +%s).png ; notify-send 'Screenshot Captured'") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("st -e /usr/bin/ranger") },
 
@@ -80,7 +87,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_a,      toggleopacity,  {0} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
@@ -111,6 +118,10 @@ static Key keys[] = {
 	{ 0, 				XF86XK_AudioLowerVolume, spawn, {.v = downvol} },
 	{ 0, 				XF86XK_AudioRaiseVolume, spawn, {.v = upvol} },	
 	{ 0, 				XF86XK_AudioMute, spawn, {.v = mutevol} },
+	{0,  				XF86XK_AudioPlay, spawn, {.v = playerplaypause}},
+        {0,  				XF86XK_AudioPause, spawn, {.v = playerplaypause}},
+        {0,  				XF86XK_AudioNext, spawn, {.v = playernext}},
+        {0,  				XF86XK_AudioPrev, spawn, {.v = playerprevious}},
 };
 
 /* button definitions */
