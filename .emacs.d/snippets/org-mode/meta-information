@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: meta information in org document
+# key: <meta
+# --
+#+TITLE: $0
+#+AUTHOR:
+#+DESCRIPTION:
