@@ -43,8 +43,6 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 static const char *upvol[] = {"/usr/bin/pamixer", "-u", "-i", "2", NULL};
 static const char *downvol[] = {"/usr/bin/pamixer", "-u", "-d","2", NULL};
 static const char *mutevol[] = {"/usr/bin/pamixer", "-m", NULL};
-static const char *brightnessdec[] = {"xbacklight -dec 2", NULL};
-static const char *brightnessinc[] = {"xbacklight -inc 2", NULL};
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "",      tile },    /* first entry is default */
@@ -117,8 +115,8 @@ static Key keys[] = {
 	{ 0, 				XF86XK_AudioLowerVolume, spawn, {.v = downvol} },
 	{ 0, 				XF86XK_AudioRaiseVolume, spawn, {.v = upvol} },	
 	{ 0, 				XF86XK_AudioMute, spawn, {.v = mutevol} },
-	{ 0, 				XF86XK_MonBrightnessUp, spawn, {.v = brightnessinc} },
-	{ 0,				XF86XK_MonBrightnessDown, spawn, {.v = brightnessdec} },
+	{ 0, 				XF86XK_MonBrightnessUp, spawn, SHCMD("xbacklight -inc 10") },
+	{ 0,				XF86XK_MonBrightnessDown, spawn, SHCMD("xbacklight -dec 10") },
 };
 
 /* button definitions */
