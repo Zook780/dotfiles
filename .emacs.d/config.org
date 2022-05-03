@@ -108,15 +108,6 @@
   (global-prettify-symbols-mode)
 #+end_src
 
-* Yasnippet
-#+begin_src emacs-lisp
-  (use-package yasnippet
-	       :ensure t
-	       :config
-	       (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-	       (yas-global-mode 1))
-#+end_src
-
 * Org mode bullets
 #+begin_src emacs-lisp
   (use-package org-bullets
@@ -125,6 +116,7 @@
 #+end_src
 
 * Autocompletion
+
 ** lsp-mode
 #+begin_src emacs-lisp
   (use-package lsp-mode
@@ -148,6 +140,22 @@
 
   ;; optionally
   (use-package lsp-ui :ensure t :commands lsp-ui-mode)
+#+end_src
+
+
+** lsp-dart
+#+begin_src emacs-lisp
+
+  (use-package lsp-dart
+    :ensure t)
+  (when (cl-find-if-not #'package-installed-p package-selected-packages)
+    (package-refresh-contents)
+    (mapc #'package-install package-selected-packages))
+
+  (add-hook 'dart-mode-hook 'lsp)
+
+  (setq gc-cons-threshold (* 100 1024 1024)
+	read-process-output-max (* 1024 1024))
 
 #+end_src
 
