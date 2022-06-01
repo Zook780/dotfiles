@@ -1,0 +1,2 @@
+bluetoothctl disconnect
+bluetoothctl power off

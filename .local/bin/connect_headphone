@@ -1,0 +1,2 @@
+bluetoothctl power on 
+bluetoothctl connect FC:58:FA:30:92:92

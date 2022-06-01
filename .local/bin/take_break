@@ -1,0 +1,1 @@
+while :; do notify-send "Take a break from your screen"; sleep 1200; done
