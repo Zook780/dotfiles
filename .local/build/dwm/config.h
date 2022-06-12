@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 15;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const unsigned int gappx	    = 10;
+static const unsigned int gappx	    = 8;
 static const double activeopacity   = 1.0f;     /* Window opacity when it's focused (0 <= opacity <= 1) */
 static const double inactiveopacity = 0.775f;   /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static       Bool bUseOpacity       = True;     /* Starts with opacity on any unfocused windows */
